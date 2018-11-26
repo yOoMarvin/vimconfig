@@ -47,12 +47,8 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme monokai
-catch
-endtry
-
 set background=dark
+colorscheme monokai
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
