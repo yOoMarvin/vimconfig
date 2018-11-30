@@ -25,8 +25,9 @@ set history=500
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set Line Numbers
-:set number
+" Set Hybrid Line Numbers
+:set number relativenumber
+
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
 set langmenu=en
@@ -35,6 +36,9 @@ source $VIMRUNTIME/menu.vim
 
 "Always show current position
 set ruler
+
+"Status Line
+":set statusline=%f\ -\ FileType:\ %y
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
